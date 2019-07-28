@@ -20,21 +20,14 @@ total number of threads:
 2) Which kernel version will generate the greatest number of threads and
 therefore potentially have the greatest amount of parallelism?
 
-% global version
-
 3) In what cases would the tiled version run faster than the untiled
 version?
 
-% If the images is large, the untiled version will generate too many threads
-% than can be executed in parallel. In addition, the extra threads introduce
-% additional overhead.
 
 4) The shared version reduces the number of accesses to global memory.
 What other reason is the shared version faster than the tiled version?
 
-%it distributes out the atomic operations
 
 5) You should also see in some cases that the privatization version runs 
 faster than the shared version, but sometimes not.  What could make it slower?
 
-%it is more complicated and increases the number of register requirements
