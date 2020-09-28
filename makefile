@@ -1,6 +1,5 @@
-NVCC = /usr/local/cuda-8.0/bin/nvcc
+NVCC = /usr/local/cuda-11.1/bin/nvcc
 CC = g++
-GENCODE_FLAGS = -arch=sm_30
 
 #Optimization flags. Don't use this for debugging.
 #NVCCFLAGS = -c -m64 -O2 --compiler-options -Wall -Xptxas -O2,-v
